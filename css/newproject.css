@@ -1,0 +1,465 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* headersection
+ ///////////////////////////
+//////////////////////////
+/////////////////////////  */
+:root
+{
+   /*  DESIGNS FOR  A SIMPLE BOX */
+  /*  width: min(100%, 310px);
+   background-color: #cbd5e1;
+   border: 2px solid black;
+justify-content: center;
+align-items: center;
+   border-radius: 15px;
+   display: flex;
+
+   align-items: center; */
+   --BOXWIDTH: min(100%, 310px);
+--BOXBACKGROUND:#cbd5e1;
+--BOXBORDER: 2px solid black;
+--BOXBORDERRADIUS:15px;
+--BOXDISPLAY:flex;                    
+--BOXALIGN:center; 
+--BUTTONCOLOR:#68b372;
+--BTNTRANSPARENT:rgb(209, 16, 51);
+}
+
+.header
+{
+min-height:80vh ;
+
+    background:radial-gradient(closest-side,rgb(245, 245, 245), rgb(231, 95, 120));
+    border-top-right-radius: 40px;
+    border-top-left-radius:40px ;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius:40px ;
+ 
+}
+
+
+body
+{
+    font-size: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+img
+{
+    display: block;
+  width: auto;
+    height: auto;
+   
+}
+header, footer,section
+{
+    position: sticky;
+    text-align: center;
+}
+
+
+.footer
+{
+  /*   border-top-right-radius: ;
+    border-top-left-radius: ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+/* margin: 2rem; */
+   height: 500px;
+
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    border-bottom-right-radius:40px ;
+    border-bottom-left-radius:40px ;
+  background-color:rgb(231, 95, 120) ;
+}
+
+main
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    
+}
+
+.webtrend
+{
+  font-size: 1.2rem;  
+  text-decoration: overline;
+  transform: skewX(15deg);
+}
+
+footer .webtrend
+{
+   color: rgb(255, 255, 255,0.4);
+}
+
+.cl
+{
+    font-weight: bold;
+    text-decoration:overline;
+    color: whitesmoke;
+    margin: 1px;
+
+}
+
+.web
+{
+    
+    display: flex;
+    list-style: none;
+
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    width: fit-content;
+    min-height:10vh;
+
+}
+nav
+{
+     display: flex;
+     flex-direction: row;
+     padding-left:7.5rem;
+     padding-right: 7.5rem;
+     align-items: center;
+     min-height: 10vh;
+     background-color: rgb(231, 95, 120,0.4);
+     border-top-right-radius: 40px;
+     border-top-left-radius:40px ;
+ 
+
+}
+
+.nav-links
+{
+ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width:fit-content;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    margin-left: auto;
+
+}
+.headercontent
+{
+    display: grid;
+    top: 0;
+    grid-template-columns:repeat(2, 4fr);
+  width:fit-content;
+   height: fit-content;
+/*    background-color: aqua; */
+margin: auto;
+gap: 5em;
+
+
+
+
+}
+.headersection
+{
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  align-items: flex-start;
+ min-width: 400px;
+   min-height:450px;
+  
+/*     background-color: blue; */
+}
+.headersection:nth-child(1)
+{
+    width:  500px;
+}
+.headersection:nth-child(2)
+{
+background-color:transparent;
+width: fit-content;
+margin-left: -50px;
+transform: skewX(-10deg);
+
+
+}
+.headertext
+{
+    text-align:left;
+    font-size: 1rem;
+    line-height: 1.5;
+color: #3d3d3d;
+    font-weight: bold;
+}
+.headertext1
+{
+    color: white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.exploreholder
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   min-height:fit-content ;
+   background-color: transparent;
+width: 100%;
+padding-top: 0.5rem;
+border: transparent;
+border-radius:15px;
+
+}
+.explorebtn
+{
+min-width:18vh;
+height: 5vh;
+border-radius:15px;
+border: transparent;
+background-color: var(--BTNTRANSPARENT);
+color: white;
+font-weight: bold;
+}
+
+/* //////////////////////////
+main product section
+////////////////////////// */
+h1
+{
+    text-decoration: underline;
+    color: white;
+    font-size: 2rem
+
+}
+figcaption
+{
+    font-weight: bold;
+    color: #3d3d3d;
+    
+}
+.productheader
+{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color:rgb(231, 95, 120);
+    border-top-right-radius: 16px;
+    border-top-left-radius:16px ;
+  
+   margin-bottom: 1.5rem;
+   z-index: 1;
+
+}
+.productcontainer
+{
+    display: flex;
+    flex-direction: column;
+width: auto;
+min-height:10vh;
+background-color: rgb(230, 228, 228);
+border-top-right-radius: 40px;
+border-top-left-radius:40px ;
+border-bottom-right-radius: 40px;
+border-bottom-left-radius:40px ;
+
+/* z-index: 3; */
+}
+figure
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.items
+{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1em;
+margin: auto;
+   
+
+}
+.forsale
+{
+    background-color: white;
+    width: fit-content;
+    min-height:60vh;
+    margin-bottom: 1.8rem;
+   /*  z-index: -1; */
+    border-top-right-radius: 40px;
+    border-top-left-radius:40px ;
+}
+.figtext
+{
+    font-weight: bold;
+    padding-top: 0.8rem;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+
+padding-left: 0.5rem;
+
+}
+.rating
+{
+    padding-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+.price
+{
+    padding-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+/* //////////////////////////
+main Latest section
+////////////////////////// */
+.seperate
+{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    width: auto;
+    border-radius: 20px;
+background-color:rgb(214, 210, 210);
+
+}
+.seperate1
+{ 
+ display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    border-radius: 20px;
+    min-height: 10vh;
+    width: auto;
+background-color:rgb(214, 210, 210);
+}
+.apple
+{
+    height: 450px;
+} 
+
+/* //////////////////////////
+Testimonial section
+
+free code camp.org
+////////////////////////// */
+
+.items1
+{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1.2em;
+margin: auto;
+min-height: fit-content;
+width: auto;
+   
+}
+
+.forsale1
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 62vh;
+   margin-top: 6rem;
+
+    min-height:40vh;
+  margin-bottom: 2rem;
+   /*  z-index: -1; */
+    border-top-right-radius: 40px;
+    
+    border-top-left-radius:40px ;
+}
+
+.customers
+{
+   border-radius: 50%;
+ /*   max-height: 70px; */
+}
+
+.customerblock
+{
+    margin-top: -130px;
+    justify-content: center;
+align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.figtext1
+{
+line-height: 1.5;
+padding-top:0.5rem ;
+padding-left:0.5rem ;
+padding-right:0.5rem ;
+}
+h3
+{
+    padding-top: 0.5rem;
+    color:rgb(231, 95, 120) ;
+}
+
+
+/* /////////////////
+for quotes
+//////////////// */
+
+blockquote {
+    border:none;
+    
+    margin-bottom:-30px;
+    }
+    
+    blockquote figcaption:before { 
+        content: open-quote;
+        font-weight: bold;
+        font-size:100px;
+        color:#889c0b;
+    } 
+    blockquote figcaption:after { 
+        content: close-quote;
+        font-weight: bold;
+        font-size:100px;
+        color:#889c0b;
+    }
